@@ -16,18 +16,6 @@ var request2 = new XMLHttpRequest();
             var responsearray = JSON.parse(request2.responseText);
             console.log(responsearray);
             var i=0;
-      /*      while(i<responsearray['results'].length){
-                if(responsearray['results'][i]['sentiment']=='positive'){
-                  positive_mentions.push(responsearray['results'][i]);
-                }else if(responsearray['results'][i]['sentiment']=='negative'){
-                        negative_mentions.push(responsearray['results'][i]);
-                    }else{
-                        console.log('neutral opinion; not printed');
-                    }
-                i++;
-            }
-            writeResults(positive_mentions,negative_mentions);
-*/
 	 }
     }
 request2.send();
