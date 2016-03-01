@@ -2,7 +2,7 @@
 MyWordpressPosts
 	Display my latests posts on my StartBootstrap Freelancer page
 
-	Joseph Haaga
+	Joseph Haaga 
 */
 
 
