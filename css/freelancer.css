@@ -53,7 +53,7 @@
 }
 
 #wordpress{
-    background-color:#21759b;
+    background-color:#186A96;
 }
 
 #wordpress * {
@@ -69,7 +69,7 @@
 
 body {
     overflow-x: hidden;
-    background-color:#E2DC95;
+    background-color:#B3C1C5;
 }
 
 p {
@@ -122,7 +122,7 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #066984;
+    border-color: #748588;
 }
 
 hr.star-light:after {
@@ -145,7 +145,7 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #0CA0E2;
+    color: #FFF;
 }
 
 header .container {

@@ -41,10 +41,12 @@
     <style>
 
 
-@media (min-width:766px) {header .container{background-image:url('img/bg2.jpg');}} 
+@media (min-width:766px) {header .container{background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+    url('img/bg2.jpg');}} 
 
 
-@media (max-width:766px) {header .container{background-image: url('img/bg.jpg');color:white;}} 
+@media (max-width:766px) {header .container{background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+    url('img/bg.jpg');}} 
 
 @media (max-width:490px) {#blogbutton{margin-left: -30px;}#resumebutton{margin-right:-20px;} header .container{background-image: url('img/bg.jpg');color:white;}} //nothing with screen size smaller than 960px
 
@@ -148,9 +150,7 @@ animation-play-state:running;}
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text">
-                        <span class="name" style="  text-shadow: 0 0 2px #000; /* horizontal-offset vertical-offset 'blur' colour */
-  -moz-text-shadow: 0 0 2px #000;
-  -webkit-text-shadow: 0 0 2px #000;">Joseph Haaga</span>
+                        <span class="name" style="">Joseph Haaga</span>
                         <hr class="star-light">
                         <span class="skills">Full Stack Development - Mobile Development - Data Engineering</span>
                     </div>
