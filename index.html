@@ -1,856 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- slight change for gh-pages -->
-<head>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Joseph Haaga is a freelance software developer focusing on mobile apps/websites/custom business intelligence workflows">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joseph Haaga</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
 
-    <title>Joseph Haaga</title>
-
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-
-    <style>
-
-
-@media (min-width:766px) {header .container{background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
-    url('img/bg2.jpg');}} 
-
-
-@media (max-width:766px) {header .container{background-image:linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
-    url('img/bg.jpg');}} 
-
-@media (max-width:366px){
-    #contact{
-        margin-top:1rem;
-    }
-}
-
-@media (min-width: 454px){
-    #resumebutton{
-        margin-right:1rem;
-    }
-}
-
-/*@media (max-width:490px) {#blogbutton{margin-left: -30px;}#resumebutton{margin-right:-20px;} header .container{background-image: url('img/bg.jpg');color:white;}} //nothing with screen size smaller than 960px*/
-
-
-
-
-    @-webkit-keyframes myfirst
-        {
-        0%   {background: #3585ce; left:0px; top:0px;}
-        25%  {background: #70ce35; left:0px; top:0px;}
-        50%  {background: #fdcdef; left:0px; top:0px;}
-        75%  {background: #ff0000; left:0px; top:0px;}
-        100% {background: #16a085; left:0px; top:0px;}
-        }
-
-        /* Standard syntax */
-        @-webkit-keyframes myfirst
-        {
-        0%   {background: #3585ce; left:0px; top:0px;}
-        25%  {background: #70ce35; left:0px; top:0px;}
-        50%  {background: #fdcdef; left:0px; top:0px;}
-        75%  {background: #ff0000; left:0px; top:0px;}
-        100% {background: #16a085; left:0px; top:0px;}
-        }
-
-        #success{-webkit-animation-name:myfirst;
--webkit-animation-duration:10s;
--webkit-animation-timing-function:linear;
--webkit-animation-delay:0s;
--webkit-animation-iteration-count:infinite;
--webkit-animation-direction:alternate;
--webkit-animation-play-state:running;
-/* Standard syntax */
-animation-name:myfirst;
-animation-duration:10s;
-animation-timing-function:linear;
-animation-delay:0s;
-animation-iteration-count:infinite;
-animation-direction:alternate;
-animation-play-state:running;}
-
-    #footer-above{-webkit-animation-name:myfirst;
--webkit-animation-duration:10s;
--webkit-animation-timing-function:linear;
--webkit-animation-delay:0s;
--webkit-animation-iteration-count:infinite;
--webkit-animation-direction:alternate;
--webkit-animation-play-state:running;
-/* Standard syntax */
-animation-name:myfirst;
-animation-duration:10s;
-animation-timing-function:linear;
-animation-delay:0s;
-animation-iteration-count:infinite;
-animation-direction:alternate;
-animation-play-state:running;}
-
-.portfolio-modal .modal-content h2{
-    font-size:2em;
-}
-
-
-    </style>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container" id="header">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Joseph Haaga</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#success">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#wordpress">Blog Posts</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact-me">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-text">
-                        <span class="name" style="">Joseph Haaga</span>
-                        <hr class="star-light">
-                        <span class="skills">Full Stack Development - Mobile Development - Data Engineering</span>
+    <body>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <div class="grid-x">
+                        <div class="cell medium-8 small-order-2 medium-order-1">
+                            <h1>Joseph Haaga</h1>
+                            <p>I'm a data scientist at <a target="_blank" href="https://tylordata.com">Tylor Data Services</a>, focusing on the graph analytics lifecycle and novel deep learning applications.</p>
+                            <p>Learn more from my <a target="_blank" href="/resume.html">resume</a> or my <a target="_blank" href="https://www.linkedin.com/in/joseph-haaga/">LinkedIn.</a></p>
+                        </div>
+                        <div class="cell medium-4 small-order-1 medium-order-2" style="text-align: center;">
+                            <img style="padding:1rem;" src="/me.jpg" />
+                        </div>
                     </div>
-                    <div class="page-scroll"><br>
-                    <!--<a href="/img/ResumePublic2.pdf" class="btn btn-warning btn-lg" style="color:white;margin-left: 5px;margin-right: 5px;" id="blogbutton">
-                        <i class=""></i> View My Resume
-                    </a>-->
-                    <a href="resume.html" target="_blank" class="btn btn-warning btn-lg" style="color:white;margin-left: 5px;margin-right: 5px;" id="blogbutton">
-                        <i class=""></i> View My Resume
-                    </a>
-                    <a href="#contact-me" class="btn btn-success btn-lg" style="color:white;" id="contact">
-                        <i class=""></i> Hire Me
-                    </a></div>
                 </div>
-            </div>
-        </div>
-    </header>
-<style>.modal-body{
-color:black;
-    }</style>
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>My Work</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-            <!-- BEIGN New Row -->
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/robot_wide.JPG" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/metrohacknight.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/crossover.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-            <!-- END New Row -->
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ss1.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ss7.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/markovme2.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <!-- <img src="img/portfolio/whethersunny.gif" class="img-responsive" alt=""> -->
-                        <img src="img/portfolio/whether.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ss5.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/ss6.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-            <!-- </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="success">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="large-12 cell">
                     <h2>About Me</h2>
-                    <hr class="star-light">
+                    <p>In the past, I've been:
+                        <ul>
+                            <li>Data Scientist at <a target="_blank" href="https://redhorsecorp.com">Redhorse Corporation</a></li>
+                            <li>Lead Architect at <a target="_blank" href="https://dataprograms.gwu.edu/data-science-institute/">GW Data Science Institute</a></li>
+                            <li>Full Stack Developer at <a target="_blank" href="https://grafik.agency">Grafik</a></li>
+                        </ul>
+                    </p>
+                    <p>I spend most of my time:
+                        <ul>
+                            <li>performing exploratory analyses in Pandas, NumPy, & seaborn</li>
+                            <li>training models in Tensorflow (Keras), PyTorch, & sklearn</li>
+                            <li>serving them as Flask/nodejs APIs</li>
+                            <li>building intuitive, user-friendly React apps</li>
+                        </ul>
+                    </p>
+                    <p>But I also:
+                        <ul>
+                            <li>Build websites in Pimcore, Wordpress, Drupal</li>
+                            <li>Automate workflows with bash scripts, Google Apps Scripts, spreadsheets, python</li>
+                            <li>Consult on relational schemas, as well as document-store and graph data models</li>
+                            <li>Dockerize and deploy sites, apps, APIs, and anything else I can get my hands on</li>
+                        </ul>
+                    </p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p style="text-align:center;">After nearly two years studying biomedical engineering at GWU, I switched majors to computer science.</p>
+                <div class="large-12 cell">
+                    <h2>My Work</h2>
+                    <p>My GitHub handle is <a target="_blank" href="https://github.com/josephhaaga">josephhaaga</a>, although the juicy stuff is private.</p>
+                    <p>My <a target="_blank" href="https://www.linkedin.com/in/joseph-haaga/">LinkedIn</a> covers much of my experience, as does my <a target="_blank" href="/resume.html">resume</a>.</p>
                 </div>
-                <div class="col-lg-4">
-                    <p style="text-align:center;">I've worked on side projects in data-mining, web/mobile development, and electrical engineering/IoT product design.</p>
-                </div>
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <a href="img/ResumePublic2.pdf" id="resumebutton" class="btn btn-lg btn-outline" style="color:white;">
-                        <i class="fa fa-download"></i> View my resume
-                    </a><a href="http://haagajoe.wordpress.com" class="btn btn-lg btn-outline" style="color:white;" id="blogbutton">
-                        <i class="fa fa-wordpress"></i> Read my blog
-                    </a>
-                    <br>
-                </div>
-                <div class="col-md-4 col-md-offset-5"><a class="navbar-brand" href="https://bitbucket.org/josephhaaga_/"><i class="fa fa-bitbucket fa-3x" style="color:white;"></i></a><a class="navbar-brand" href="https://github.com/josephhaaga"><i class="fa fa-github fa-3x" style="color:white;"></i></a></div>
-            </div>
-        </div>
-    </section>
-
-<!-- Wordpress Grid Section -->
-<section id="wordpress">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Latest Blog Posts</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 wordpress-item">
-                    <a id="post0link"> <h3 style="color:white;" id="post0title">Latest Blog Posts</h3></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 wordpress-item">
-                    <a id="post1link"><h3 style="color:white;" id="post1title">Latest Blog Posts</h3></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 wordpress-item">
-                    <a id="post2link"><h3 style="color:white;" id="post2title">Latest Blog Posts</h3></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 wordpress-item">
-                   <a id="post3link"><h3 style="color:white;" id="post3title">Latest Blog Posts</h3></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 wordpress-item">
-                    <a id="post4link"><h3 style="color:white;" id="post4title">Latest Blog Posts</h3></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 wordpress-item">
-                   <a id="post5link"><h3 style="color:white;" id="post5title">Latest Blog Posts</h3></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact-me">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                   <form name="sentMessage" action="//formspree.io/haaga.joe@gmail.com" id="contactForm" method="POST">
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" name="name" required data-validation-required-message="Please enter your name.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" name="_replyto" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                         <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" name="message" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <button type="submit" value="Send" class="btn btn-success btn-lg">Send</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above" id="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Washington, DC</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3></h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/haagajoe" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://google.com/+JosephHaaga" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/joe_haaga" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/pub/joseph-haaga/70/a38/874" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
+                <div class="large-12 cell">
+                    <h2>Competencies</h2>
+                    <div class="competencies">
+                        <style>
+                            .keywords {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-auto-rows: 2em;
+                                grid-gap: .5em;
+                            }
+                        </style>
+                        <ul class="keywords">
+                            <li>Docker</li>
+                            <li>NodeJS</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Firebase</li>
+                            <li>Neo4J</li>
+                            <li>ReactJS</li>
+                            <li>jQuery</li>
+                            <li>Python</li>
+                            <li>Anaconda</li>
+                            <li>NumPy</li>
+                            <li>Pandas</li>
+                            <li>Java</li>
+                            <li>Wordpress</li>
+                            <li>Pimcore</li>
+                            <li>Drupal</li>
+                            <li>Bash</li>
+                            <li>Tableau</li>
+                            <li>Spark</li>
+                            <li>Scala</li>
+                            <li>GraphFrames</li>
+                            <li>Google Cloud Platform</li>
+                            <li>Amazon Web Services</li>
+                            <li>CentOS</li>
+                            <li>Ubuntu</li>
                         </ul>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Availability</h3>
-                        <p>I am <span style="color:lightgreen;">open</span> to new opportunities. Please fill out a contact form.</p>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Joseph Haaga 2016
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Analyzing trends on a college campus</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/ss1.png" class="img-responsive img-centered" alt="">
-                            <p>This is a <a href="https://haagajoe.wordpress.com/2015/01/15/yik-yak-sentiment-analysis/">blog post</a> I wrote on one of my first sentiment analysis projects. Messages tagged with the geolocation of GWU's campus were scraped from Yik Yak and manipulated in Tableau.</p>
-                            <ul class="list-inline item-details">
-                                <li>Platform
-                                    <strong><a href="http://haagajoe.wordpress.com">Wordpress</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="https://haagajoe.wordpress.com/2015/01/">January 2015</a>
-                                    </strong>
-                                </li>
-                                <li>Skills:
-                                    <strong><a href="https://haagajoe.wordpress.com/category/data-analysis/">Data Analysis, </a>
-                                    </strong><strong><a href="https://haagajoe.wordpress.com/category/data-visualization/">Data Visualization</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                           <h2>Sentiment Analysis on media portrayal of <i>The Interview</i></h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/ss3.png" class="img-responsive img-centered" alt="">
-                            <p>Another <a href="https://haagajoe.wordpress.com/2014/12/31/sentiment-analysis-on-american-medias-portrayal-of-the-interview/">blog post</a> from my early opinion-mining projects. I used JSoup to scrape Google News for articles about 'The Interview' and used an R package for sentiment classification. Data could be flipped and manipulated via Tableau in real-time thanks to a handy package called Rserve.</p>
-                            <ul class="list-inline item-details">
-                                <li>Platform
-                                    <strong><a href="http://haagajoe.wordpress.com">Tableau, </a>
-                                    </strong><strong><a href="http://haagajoe.wordpress.com">RStudio</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="https://haagajoe.wordpress.com/2014/12/">December 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Skills:
-                                    <strong><a href="https://haagajoe.wordpress.com/category/data-analysis/">Data Analysis, </a>
-                                    </strong><strong><a href="https://haagajoe.wordpress.com/category/data-engineering/">Data Engineering</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body">
-                           <h2>MarkovMe</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/markovme2.png" class="img-responsive img-centered" alt="">
-                            <p>A <a href="http://joehaaga.xyz/MarkovMe">microsite</a> to generate & post Facebook statuses. Statuses are generated via Markov Chain (using my <a href="https://github.com/josephhaaga/MarkovJS">MarkovJS</a> library) trained on a user's Facebook statuses.</p>
-                            <ul class="list-inline item-details">
-                                <li>Platform:
-                                    <strong><a href="https://developers.facebook.com/docs/javascript">Facebook JavaScript SDK</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="https://haagajoe.wordpress.com/2016">Sept 2016</a>
-                                    </strong>
-                                </li>
-                                <li>Skills:
-                                    <strong><a href="https://haagajoe.wordpress.com/category/web-development/">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body">
-                           <h2>Whether</h2>
-                            <hr class="star-primary">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <img src="img/portfolio/whethercloud.gif" class="img-responsive img-left" alt="">
-                                </div>
-                                <div class="col-md-6">
-                                    <img src="img/portfolio/whethersunny.gif" class="img-responsive img-right" alt="">
-                                </div>
-                            </div>
-                            <p>Whether is a weather app for iOS and Android. <a href="https://haagajoe.wordpress.com/2015/08/16/move-fast-with-phonegap-pt-2/">Read more</a> about how I used PhoneGap and Javascript to build a marketplace-ready mobile app.</p>
-                            <ul class="list-inline item-details">
-                                <li>Platform
-                                    <strong><a href="https://haagajoe.wordpress.com/category/phonegap/">PhoneGap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="https://haagajoe.wordpress.com/2015/08/">August 2015</a>
-                                    </strong>
-                                </li>
-                                <li>Skills:
-                                    <strong><a href="https://haagajoe.wordpress.com/category/mobile-development/">Mobile Development, </a>
-                                    </strong><strong><a href="https://haagajoe.wordpress.com/category/web-development/">Web Development, </a>
-                                    </strong><strong><a href="https://haagajoe.wordpress.com/category/phonegap/">PhoneGap</a>
-                                    </strong>
-                                </li>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                           <h2>YukOrYay</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/ss5.png" class="img-responsive img-centered" alt="">
-                            <p>Short <a href="https://haagajoe.wordpress.com/2015/04/20/a-momentous-pivot/">blog post</a> about YukOrYay, an interactive way to mine for local opinions via social media.</p>
-                            <ul class="list-inline item-details">
-                                <li>Platform
-                                    <strong><a href="http://student.seas.gwu.edu/~jhaaga/YukOrYay/php/homepage.php">YukOrYay</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="https://haagajoe.wordpress.com/2015/04/">April 2015</a>
-                                    </strong>
-                                </li>
-                                <li>Skills:
-                                    <strong><a href="https://haagajoe.wordpress.com/category/web-development/">Web Development, </a>
-                                    </strong><strong><a href="https://haagajoe.wordpress.com/category/data-visualization/">Data Visualization</a>
-                                    </strong>
-                                </li>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                           <h2>FileSweep</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/ss6.png" class="img-responsive img-centered" alt="">
-                            <p><a href="http://jdelosprados.wix.com/filesweep">FileSweep</a> is a utility for OSX/Windows that cleans cluttered desktops. Your desktop contents are sorted in folders depending on file extension. <br><strong style="color:red;">Blog Post Pending</strong></p>
-                            <ul class="list-inline item-details">
-                                <li>Platform
-                                    <strong><a href="http://jdelosprados.wix.com/filesweep">Java, OSX, Windows</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="https://haagajoe.wordpress.com/2015/04/">April 2015</a>
-                                    </strong>
-                                </li>
-                                <li>Skills:
-                                    <strong><a href="https://haagajoe.wordpress.com/category/web-development/">Web Development, </a>
-                                    </strong><strong><a href="https://haagajoe.wordpress.com/category/data-visualization/">Data Visualization</a>
-                                    </strong>
-                                </li>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body">
-                           <h2>Genetic algorithm crossover techniques</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/crossover.png" class="img-responsive img-centered" alt="">
-                            <p>A <a href="https://github.com/josephhaaga/genetic_algorithms">comparative analysis</a> of crossover techniques for genetic algorithms applied to the Travelling Salesman Problem. Completed for Dr. Vincenzo Cutello's Artificial Intelligence Algorithms course @ GWU.</p>
-                            <ul class="list-inline item-details">
-                                <li>Platform:
-                                    <strong><a href="https://www.continuum.io/downloads">Jupyter Notebook/Python</a>, <a href="https://github.com/DEAP/deap">DEAP</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="https://haagajoe.wordpress.com/2016/">May 2016</a>
-                                    </strong>
-                                </li>
-                                <li>Skills:
-                                    <strong><a href="https://haagajoe.wordpress.com/category/python/">Python</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body">
-                           <h2>Metro Hack Night</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/metrohacknight2.jpg" class="img-responsive img-centered" alt="">
-                            <p>Presented <a href="https://github.com/josephhaaga/metrowrapper">handrolled WMATA arrivals scraper & analysis</a> to a crowd of ~100 at Transportation Techie's MetroHackNight V meetup, identifying 11% error in real-time arrival predictions. Also found Silver line to have shortest mean waittime (~4 minutes), whereas the red line experienced a mean waittime of nearly 9 minutes.</p>
-                            <ul class="list-inline item-details">
-                                <li>Platform:
-                                    <strong><a href="https://www.continuum.io/downloads">Jupyter Notebook/Python</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="https://haagajoe.wordpress.com/2016/">July 2016</a>
-                                    </strong>
-                                </li>
-                                <li>Skills:
-                                    <strong><a href="https://haagajoe.wordpress.com/category/python/">Python</a>, <a href="https://haagajoe.wordpress.com/category/data-engineering/">Data Engineering</a> 
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                       <div class="modal-body">
-                           <h2>Motion classification</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/robot_wide.JPG" class="img-responsive img-centered" alt="">
-                            <p>Achieved 87% accuracy <a href="https://github.com/josephhaaga/research/tree/master/motion_classification">classifying 12 different gestures</a> (MSRC-12 dataset) recorded with a Microsoft Kinect, for implementation in a charades-playing robot. Developed in <a href="https://www.seas.gwu.edu/chung-hyuk-park">Dr. Chung Hyuk Park's</a> Assistive Robotics and Tele-Medicine (ART-Med) Lab at The George Washington University School of Engineering & Applied Science.</p>
-                            <ul class="list-inline item-details">
-                                <li>Platform:
-                                    <strong><a href="https://www.continuum.io/downloads">Jupyter Notebook/Python</a>, <a href="http://pandas.pydata.org/">Pandas</a>, <a href="http://www.numpy.org/">NumPy</a>, <a href="https://developer.microsoft.com/en-us/windows/kinect">Microsoft Kinect</a>, <a href="https://github.com/josephhaaga/research/tree/master/motion_classification">Scikit-Learn</a> 
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="https://haagajoe.wordpress.com/2016/">July 2016</a>
-                                    </strong>
-                                </li>
-                                <li>Skills:
-                                    <strong><a href="https://haagajoe.wordpress.com/category/data-engineering/">Data Engineering</a>, <a href="https://haagajoe.wordpress.com/category/machine-learning/">Machine Learning</a> 
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
-    <script src="js/MyWordpressPosts/wordpressPosts.js"></script> 
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-66264514-2', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-</body>
-
+    </body>
 </html>
-<!DOCTYPE html>
