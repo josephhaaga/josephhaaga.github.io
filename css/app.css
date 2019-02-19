@@ -5,7 +5,7 @@
     grid-gap: .5em;
 }
 
-.contact .submit {
+#contact .submit {
     color: #fff;
     padding: 1rem 2rem;
 }
