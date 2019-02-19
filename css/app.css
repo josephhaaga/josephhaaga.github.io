@@ -7,7 +7,12 @@
 
 #contact .submit {
     color: #fff;
+    background-color: #1c8a45;
     padding: 1rem 2rem;
+}
+
+#contact .submit:hover {
+    background-color: #3eac67;
 }
 
 .contact-link {
