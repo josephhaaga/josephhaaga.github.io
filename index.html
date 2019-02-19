@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="css/foundation.min.css">
         <link rel="stylesheet" href="css/app.css">
     </head>
-
     <body>
         <div class="grid-container">
             <div class="grid-x grid-padding-x">
@@ -63,6 +62,32 @@
                     <h2>My Work</h2>
                     <p>My GitHub handle is <a rel="noreferrer" target="_blank" href="https://github.com/josephhaaga">josephhaaga</a>, although the juicy stuff is private.</p>
                     <p>My <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/joseph-haaga/">LinkedIn</a> covers much of my experience, as does my <a target="_blank" href="/resume.html">resume</a>.</p>
+                </div>
+                <div class="large-12 cell">
+                    <h2>Get In Touch</h2>
+                    <form name="sentMessage" action="//formspree.io/haaga.joe@gmail.com" id="contact" method="POST">
+                        <div class="grid-x">
+
+                            <div class="small-12 cell">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" name="name" required
+                                    data-validation-required-message="Please enter your name.">
+                            </div>
+                            <div class="small-12 cell">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" name="_replyto" required
+                                    data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="small-12 cell">
+                                <label>Message</label>
+                                <textarea rows="5" name="message" class="form-control" placeholder="Message" id="message" required
+                                    data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                                <button type="submit" value="Send" class="button success submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="large-12 cell">
                     <h2>Competencies</h2>

@@ -4,3 +4,8 @@
     grid-auto-rows: 2em;
     grid-gap: .5em;
 }
+
+.contact .submit {
+    color: #fff;
+    padding: 1rem 2rem;
+}
