@@ -71,20 +71,20 @@
                     <form name="sentMessage" action="https://formspree.io/haaga.joe@gmail.com" id="contact" method="POST">
                         <div class="grid-x">
                             <div class="small-12 cell">
-                                <label>Name
-                                <input type="text" class="form-control" placeholder="Name" id="name" name="name" required
-                                    data-validation-required-message="Please enter your name."></label>
+                                <label for="name">Name
+                                <input type="text" class="form-control" aria-label="Name" placeholder="Name" id="name" name="name" 
+                                    required data-validation-required-message="Please enter your name."></label>
                             </div>
                             <div class="small-12 cell">
-                                <label>Email Address
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" name="_replyto" required
-                                    data-validation-required-message="Please enter your email address."></label>
+                                <label for="email">Email Address
+                                <input type="email" class="form-control" aria-label="Email address" placeholder="Email Address" id="email" name="_replyto" 
+                                    required data-validation-required-message="Please enter your email address."></label>
                             </div>
                             <div class="small-12 cell">
-                                <label>Message
-                                <textarea rows="5" name="message" class="form-control" placeholder="Message" id="message" required
+                                <label for="message">Message
+                                <textarea rows="5" name="message" class="form-control" aria-label="Message" placeholder="Message" id="message" required
                                     data-validation-required-message="Please enter a message."></textarea></label>
-                                <button type="submit" value="Send" class="button success submit">Send</button>
+                                <button type="submit" value="Send" aria-label="Contact form submit" class="button success submit">Send</button>
                             </div>
                         </div>
                     </form>
