@@ -1,97 +1,29 @@
 <!doctype html>
 <html>
+
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Joseph Haaga</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <style>
-  /********************************************
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Joseph Haaga</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+      <style>
+        /********************************************
 * 	reset from
 * 	http://meyerweb.com/eric/tools/css/reset/
 *******************************************/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -99,17 +31,8 @@ video {
     vertical-align: baseline;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
@@ -117,20 +40,16 @@ body {
     line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
     content: none;
 }
 
@@ -139,13 +58,10 @@ table {
     border-spacing: 0;
 }
 
-
 /****************
 *	COMMONS
 ****************/
-
-body,
-html {
+body, html {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 13px;
     color: #40484f;
@@ -153,7 +69,7 @@ html {
     letter-spacing: 0;
     line-height: 1.46153846;
     text-align: left;
-    -webkit-text-size-adjust: 100%;
+    webkit-text-size-adjust: 100%;
 }
 
 p {
@@ -181,8 +97,8 @@ li {
     margin-left: 1.3em;
 }
 
-.highlights>li>p {
-    margin-bottom: 0.5em;
+.highlights > li > p {
+  margin-bottom: 0.5em;
 }
 
 h1 {
@@ -209,17 +125,13 @@ strong {
     font-weight: 700;
 }
 
-
 /* main container */
-
 #resume {
     padding: 1rem;
     margin-top: 2rem;
 }
 
-
 /* every section wrapper */
-
 .section {
     margin-bottom: 1rem;
 }
@@ -238,8 +150,8 @@ section .location {
     padding: 0;
 }
 
-#header>#profiles,
-#header>#contact,
+#header > #profiles,
+#header > #contact,
 #skills,
 #languages,
 #interests {
@@ -254,11 +166,11 @@ section .location {
     justify-content: flex-start;
 }
 
-#header>div {
+#header > div {
     line-height: 1.5;
 }
 
-#header>div>div {
+#header > div > div {
     margin-right: 1.2em;
 }
 
@@ -301,7 +213,7 @@ h2.section-title {
     font-size: .9rem;
 }
 
-.section>header {
+.section > header {
     position: relative;
 }
 
@@ -309,7 +221,7 @@ h2.section-title {
     margin-right: 0.25em;
 }
 
-.section>header::after {
+.section > header::after {
     position: absolute;
     left: 0;
     top: .7em;
@@ -321,21 +233,21 @@ h2.section-title {
     display: block;
 }
 
-.section.main-summary>section {
+.section.main-summary > section {
     margin: 0;
 }
 
-.section>section>header {
+.section > section > header {
     font-size: 1.38rem;
     position: relative;
     margin-top: .7em;
 }
 
-.section>section>header:first-of-type {
+.section > section > header:first-of-type {
     margin: 0;
 }
 
-.section>section>header .space-left {
+.section > section > header .space-left {
     position: absolute;
     left: -1.56rem;
     top: 5px;
@@ -423,9 +335,7 @@ ul.courses li:hover {
     font-size: 1.1em;
 }
 
-
 /* Social Media Brand Colors */
-
 .google-plus {
     color: #dd4b39;
 }
@@ -493,11 +403,7 @@ ul.courses li:hover {
     content: '\f16c';
     color: #f68a1f;
     overflow: hidden;
-    height: 100%;
-}
-
-.telegram {
-    color: #2291c3;
+    height: 40%;
 }
 
 #languages .item,
@@ -516,9 +422,7 @@ ul.courses li:hover {
     width: 15em;
 }
 
-
 /* Skill chart */
-
 .level {
     margin-bottom: .5em;
 }
@@ -567,10 +471,6 @@ ul.courses li:hover {
     border-left: 5px solid #ff6d1f;
 }
 
-.toggle-item {
-  visibility: hidden;
-}
-
 /******************
 *	HELPER CLASSES
 ******************/
@@ -590,11 +490,9 @@ ul.courses li:hover {
     margin-bottom: .5rem;
 }
 
-
 /****************
 *		TABLET
 ****************/
-
 @media screen and (min-width: 602px) {
     #resume {
         width: 80%;
@@ -602,78 +500,61 @@ ul.courses li:hover {
     }
 }
 
-
 /****************
 *		LAPTOP
 ****************/
-
 @media screen and (min-width: 1025px) {
     li {
         margin-left: 1.5em;
     }
+
     #resume {
         width: 820px;
-        margin: 2rem auto;      
+        margin: 2rem auto;
+        opacity: 0;
+        -webkit-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
     }
-    .section>section>header .space-left {
+
+    .section > section > header .space-left {
         opacity: 1;
         cursor: pointer;
     }
-    .section>section {
+
+    .section > section {
         margin-left: 1.67rem;
     }
-    .toggle-item {
-        transform: translate(-9999px);
-    }
-    .toggle-item+label {
-        display: block;
-        margin-top: -16px;
-    }
-    .toggle-item:checked+label:after {
-        content: '\f0d7';
-    }
-    .toggle-item+label:after {
-        float: left;
-        cursor: pointer;
-        margin-left: -20px;
-        color: #aaa;
-        font-size: 16px;
-        content: '\f0da';
-        font-family: Fontawesome;
-    }
-    .toggle-item~.item {
-        height: 0;
-        opacity: 0;
-    }
-    .toggle-item:checked~.item {
-        height: auto;
-        opacity: 1;
-        transition: all .5s linear;
-    }
+
     .company::before,
     .institution::before,
     .organization::before,
     .awarder::before {
         content: "| ";
     }
+
     .header-left {
         float: left;
         width: 70%;
         word-break: normal;
     }
+
     .section header .date {
         float: right;
         padding: .2em;
     }
+
     .display {
         display: none;
     }
+
     .display:not(.none) {
         display: block;
     }
+
 }
 
 @media print {
+
     #resume {
         margin: 0;
         padding: 0;
@@ -682,44 +563,54 @@ ul.courses li:hover {
         line-height: 1.3;
         /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
     }
+
     @page {
         margin: 1cm 1.4cm;
     }
+
     .item-count {
         display: none;
     }
+
     .company::before,
     .institution::before,
     .organization::before,
     .awarder::before {
         content: "at ";
     }
+
     .main-summary {
         padding: 2rem 0;
     }
+
     .section {
         margin: .8rem 0;
         padding: 0;
     }
+
     .section header {
         padding-bottom: .15rem;
     }
+
     .section .location {
         padding-bottom: .15rem;
     }
     .stack-overflow::after {
         content: "";
     }
+
     .fa.social {
         color: #828386;
     }
+
     ul {
         margin-top: .4em;
     }
-    ul,
-    li {
+
+    ul, li {
         padding: 0;
     }
+
     ul.keywords li,
     ul.courses li {
         margin: 0;
@@ -727,487 +618,666 @@ ul.courses li:hover {
         font-size: .8rem;
         text-transform: lowercase;
     }
+
     ul.keywords li::after,
     ul.courses li::after {
         padding: 0 0 0 .1rem;
         content: " |";
     }
+
     ul.keywords::before,
     ul.courses::before {
         font-size: .8rem;
         font-weight: 600;
     }
+
     ul.keywords::before {
         content: "Skills acquired: ";
     }
+
     #skills .keywords::before {
         content: '';
     }
+
     .section p {
         margin: 0;
         padding: 0;
     }
+
     ul.courses::before {
         content: "Major courses: ";
     }
+
     ul.keywords li:last-of-type::after,
     ul.courses li:last-of-type::after {
         content: "";
     }
+
     .level em {
         font-style: normal;
         padding: .1em 0;
     }
+
     .level .bar {
         display: none;
     }
+
     #profiles .item {
         padding: 0;
     }
+
     .item.display {
         display: block;
         opacity: 1 !important;
     }
 }
 
-  </style>
-  
-  </head>
-  <body>
-  
-  <div id="resume">
-    	<header id="header" class="clear">
-    		<img class="picture" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAWKAAAAJDFlYzFiMjgyLTg5NDUtNDY4OS1iN2Q2LWM2Mzg5OTBlZjk2NQ.jpg" alt="Joseph Haaga" />
-    		<div class="middle">
-    			<h1 class="name">Joseph Haaga</h1>
-    			<h2 class="label">Developer &amp; Data Engineer</h2>
-    		</div>
-    		
-    		<span class="location">
-    			<span class="address">1119 Colonial Ave,</span> 
-    			<span class="postalCode">VA 22314,</span> 
-    			<span class="city">Alexandria,</span> 
-    			<span class="region">Virginia</span> 
-    			<span class="countryCode">US</span> 
-    		</span>
-    		
-    
-    		<div id="contact">
-    			<div class="website">
-    				<span class="fa fa-external-link"></span>
-    				<a target="_blank" target="_blank" href="http://joehaaga.xyz">http://joehaaga.xyz</a>
-    			</div>
-    			<div class="email">
-    				<span class="fa fa-envelope-o"></span>
-    				<a href="mailto:haaga.joe@gmail.com">haaga.joe@gmail.com</a>
-    			</div>
-    			<div class="phone">
-    				<span class="fa fa-mobile"></span>
-    				<a href="tel:(240) 778-9695">(240) 778-9695</a>
-    			</div>
-    		</div>
-    
-    		<div id="profiles">
-    			<div class="item">
-    				<div class="username">
-    					<span class="fa fa-github github social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://github.com/josephhaaga">josephhaaga</a>
-    					</span> 
-    				</div>
-    			</div>
-    			<div class="item">
-    				<div class="username">
-    					<span class="fa fa-linkedin linkedin social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://www.linkedin.com/in/joseph-haaga/">joseph-haaga</a>
-    					</span> 
-    				</div>
-    			</div>
-    		</div>
-    	</header>
-    
-    
-    <section class="section margin1">
-    	<header>
-    		<h2 class='section-title'>Skills</h2>
-    	</header>
-    	<section id="skills">
-    		<div class="item">
-    			<h3 class="name">
-    				Web Development
-    			</h3>
-    			 			<ul class="keywords">
-    				<li>HTML</li>
-    				<li>CSS</li>
-    				<li>Javascript</li>
-    				<li>PHP</li>
-    				<li>LAMP Stack</li>
-    				<li>MEAN Stack</li>
-    				<li>ReactJS</li>
-    				<li>NodeJS</li>
-    				<li>Pimcore</li>
-    				<li>Drupal 7/8</li>
-    				<li>Wordpress</li>
-    				<li>jQuery</li>
-    				<li>d3js</li>
-    				<li>Cordova/Phonegap</li>
-    				<li>508 Compliance</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Software Development
-    			</h3>
-    			 			<ul class="keywords">
-    				<li>Java</li>
-    				<li>Python</li>
-    				<li>BASH</li>
-    				<li>Perl</li>
-    				<li>Git</li>
-    				<li>Docker</li>
-    				<li>Unit Testing</li>
-    				<li>TDD</li>
-    				<li>OOP</li>
-    				<li>Functional Programming</li>
-    				<li>Design Patterns</li>
-    				<li>Algorithmic Analysis</li>
-    				<li>RDBMS</li>
-    				<li>MySQL/NoSQL</li>
-    			</ul>
-    		</div>
-    		<div class="item">
-    			<h3 class="name">
-    				Data Science
-    			</h3>
-    			 			<ul class="keywords">
-    				<li>R</li>
-    				<li>Python</li>
-    				<li>Pandas</li>
-    				<li>NumPy</li>
-    				<li>NLP</li>
-    				<li>Classification</li>
-    				<li>Regression/Linear Modeling</li>
-    				<li>Clustering/Unsupervised techniques</li>
-    				<li>SQL/NoSQL</li>
-    				<li>Elasticsearch &amp; Logstash</li>
-    				<li>Tableau</li>
-    				<li>ArcGIS</li>
-    			</ul>
-    		</div>
-    	</section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Work Experience <span class="item-count">(5)</span></h2>
-      </header>
-    
-      <section id="work">
-        <section class="work-item">
-    
-            <input id="work-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="work-item-0"></label>
-    
-    			<header>
-    				<div class="position">Lead Architect</div>
-    				<div class="company">GWU Data Science Institute</div>
-    				<div class="date">
-    				  <span class="startDate">November 2017</span> 
-    					<span class="endDate">- Current</span>
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://gwu.edu">https://gwu.edu</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Selected to be a founding member of GWU's DSI, aiding in bootstrapping the institute as well as supporting technical initiatives.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Led deployment efforts in standing up a cloud-hosted information sharing environment for Virginia state agencies, alongside ODNI and AWS</p></li>
-                <li><p>Mentored students in Data Warehousing classes, providing guidance on their semester projects</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-1" type="checkbox" class="toggle-item" />
-            <label for="work-item-1"></label>
-    
-    			<header>
-    				<div class="position">Full Stack Developer</div>
-    				<div class="company">Grafik</div>
-    				<div class="date">
-    				  <span class="startDate">August 2016</span> 
-    					<span class="endDate">- Current</span>
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://grafik.agency">https://grafik.agency</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Grafik is a branding agency focused on crafting digital brands for B2B, B2C, Nonprofit and government clients worldwide.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Led architecture and development of CMS-driven solutions for clients like Strayer & Global Automakers, using Drupal 8 and Pimcore 5.</p></li>
-                <li><p>Contributed to the architecture and development of marketing websites for brands like Strayer, Ligado, Politico, Merritt Clubs, JBG and EYA. Developed on Drupal 7, Pimcore 4/5, and Wordpress.</p></li>
-                <li><p>Drastically reduced development timelines by building internal tools to streamline internal processes (structured QA spreadsheet with Slackbot integration to close developer-designer feedback loop and closely track live performance/completeness metrics). Built using Google Apps Script, Google Sheets, and Slack Webhooks.</p></li>
-                <li><p>Delivered customer persona insights by applying data mining & visualization techniques to client CRM & transactional data. Performed analysis using Tableau and Anaconda toolkit (Seaborn, Pandas, NumPy).</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-2" type="checkbox" class="toggle-item" />
-            <label for="work-item-2"></label>
-    
-    			<header>
-    				<div class="position">Developer</div>
-    				<div class="company">Gray Street Solutions</div>
-    				<div class="date">
-    				  <span class="startDate">May 2015</span> 
-    					<span class="endDate">- July 2016</span> 
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://graystreetsolutions.com">https://graystreetsolutions.com</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Gray Street Solutions is a boutique, digital-first creative agency, founded on the principle of bringing a “Fearlessly Agile” approach to online communications consulting, open-source web development, and social media campaign management.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Led development of a cross-platform mobile application to track a brand’s social media campaigns, using Apache Cordova and Adobe PhoneGap.</p></li>
-                <li><p>Developed and maintained digital presences for a variety of trade organizations, defense companies, and nonprofit clients. Developed on Wordpress and maintained on WPEngine managed hosting.</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-3" type="checkbox" class="toggle-item" />
-            <label for="work-item-3"></label>
-    
-    			<header>
-    				<div class="position">Jr. Solutioneer</div>
-    				<div class="company">Eastport Analytics</div>
-    				<div class="date">
-    				  <span class="startDate">May 2014</span> 
-    					<span class="endDate">- August 2014</span> 
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://www.eastportanalytics.com/">https://www.eastportanalytics.com/</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Eastport Analytics is an analytics consulting group applying advanced analytics to uncover valuable insights and drive measurably better mission outcomes.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Developed automated spreadsheet parsers in Java 7.</p></li>
-                <li><p>Merged GIS shapefiles with political ad spend data to determine campaign efficacy in Designated Market Areas.</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-4" type="checkbox" class="toggle-item" />
-            <label for="work-item-4"></label>
-    
-    			<header>
-    				<div class="position">Developer</div>
-    				<div class="company">@HomeRehab</div>
-    				<div class="date">
-    				  <span class="startDate">May 2013</span> 
-    					<span class="endDate">- April 2014</span> 
-    				</div>
-    			</header>
-    			
-        	<span class="website">
-        		<a target="_blank" href="https://gust.com/companies/homerehab">https://gust.com/companies/homerehab</a>
-        	</span>      	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>@HomeRehab designs exercise devices and software to improve the continuum of care related to falls among the aging population.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Prototyped IoT orthopedic rehabilitative device on Arduino hardware in a dialect of C.</p></li>
-                <li><p>Developed games to be played with the device to aid in gamification of proprioceptive rehabilitation exercises.</p></li>
-                <li><p>Implement wireless modules (XBee), LCD screens, & various sensors/actuators within I/O constraints of a development board.</p></li>
-            </ul>
-        	</div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Volunteer</h2>
-      </header>
-      <section id="volunteer">
-        <section class="volunteer-item">
-    
-            <input id="volunteer-item-0" type="checkbox" class="toggle-item" checked="checked" />
-            <label for="volunteer-item-0"></label>
-    
-          <header>
-            <div class="header-left">
-              <div class="position">
-                Coordinator &amp; Volunteer
-              </div>
-              <div class="organization">
-                Grafik Gives
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              August 2017
-              </span>
-              <span class="endDate">
-              - Current
-              </span>
-            </div>
-          </header>
-          <div class="website">
-            <a target="_blank" href="https://grafik.agency">https://grafik.agency</a>
-          </div>
-          <div class="item">
-            <div class="summary">
-              <p><p>Introduce potential initiatives and coordinate CSR events.</p></p>
-            </div>
-            <ul class="highlights">
-              <li><p>Raised >$1000 for AIGA, providing scholarships for underrepresented design students in the DC area.</p></li>
-              <li><p>Developed spreadsheet solution for long-term initiative planning, enabling tracking of the organization's impact on local, regional, and national levels.</p></li>
-            </ul>
-          </div>
-        </section>
-        <section class="volunteer-item">
-    
-            <input id="volunteer-item-1" type="checkbox" class="toggle-item" />
-            <label for="volunteer-item-1"></label>
-    
-          <header>
-            <div class="header-left">
-              <div class="position">
-                Kitchen Volunteer
-              </div>
-              <div class="organization">
-                So Others Might Eat
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              April 2011
-              </span>
-              <span class="endDate">
-              - Current
-              </span>
-            </div>
-          </header>
-          <div class="website">
-            <a target="_blank" href="http://some.org/">http://some.org/</a>
-          </div>
-          <div class="item">
-            <div class="summary">
-              <p><p>Serving meals to marginalized people in the DMV area.</p></p>
-            </div>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
-      </header>
-    
-      <section id="education">
-        <section class="education-item">
-          <header>
-            <div class="header-left">
-              <div class="studyType">
-                M.Sc.
-              </div>
-              <div class="area">
-                Data Science
-              </div>
-              <div class="institution">
-                The George Washington University
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2017
-              </span>
-              <span class="endDate">
-              - 2018
-              </span>
-            </div>
-          </header>
-    
-    
-          <ul class="courses">
-            <li>Data Science</li>
-            <li>Data Warehousing</li>
-            <li>Data Mining</li>
-            <li>Visualization of Complex Data</li>
-            <li>Machine Learning I</li>
-            <li>Machine Learning II</li>
-            <li>Time Series Analysis</li>
-            <li>Cloud Computing</li>
-            <li>Bayesian Methods</li>
-            <li>Member of Graduate Consulting Club</li>
-            <li>Member of MBA Business Analytics Club</li>
-            <li>President of MS Data Science Student Council</li>
-          </ul>
-    
-          <div class="item">
-            <div class='gpa'>
-              <strong> Grade:</strong> <span>3.92</span>
-            </div>
-          </div>
-        </section>
-        <section class="education-item">
-          <header>
-            <div class="header-left">
-              <div class="studyType">
-                B.Sc.
-              </div>
-              <div class="area">
-                Computer Science
-              </div>
-              <div class="institution">
-                The George Washington University
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              2012
-              </span>
-              <span class="endDate">
-              - 2017
-              </span>
-            </div>
-          </header>
-    
-    
-          <ul class="courses">
-            <li>Circuit Theory</li>
-            <li>Bioinformatics</li>
-            <li>Algorithms</li>
-            <li>Software Engineering</li>
-            <li>Database Systems</li>
-            <li>Systems Architecture</li>
-            <li>Operating Systems</li>
-            <li>Machine Learning</li>
-            <li>Systems Programming</li>
-            <li>Artificial Intelligence Algorithms</li>
-            <li>Statistical NLP</li>
-            <li>DEEPQuest IBM Watson (essentially a supplement to Stat. NLP)</li>
-          </ul>
-    
-          <div class="item">
-          </div>
-        </section>
-      </section>
-    </section>
+      </style>
+    </head>
 
-  </body>
-</html>
+    <body>
+      <div id="resume">
+          <header id="header" class="clear">
+              <img class="picture" src="https://pbs.twimg.com/profile_images/684062598048817152/bMtG8lln_400x400.jpg" alt="Joseph Haaga"/>
+              <div class="middle">
+                <h1 class="name">Joseph Haaga</h1>
+                <h2 class="label">Developer &amp; Data Engineer</h2>
+              </div>
+
+              <span class="location">
+                  <span class="address">
+                    39 S Hudson St.,
+                  </span>
+                  <span class="postalCode">
+                    VA 22304,
+                  </span>
+                  <span class="city">
+                    Alexandria,
+                  </span>
+                  <span class="region">
+                    Virginia
+                  </span>
+                  <span class="countryCode">
+                    US
+                  </span>
+              </span>
+            
+              <div id="contact">
+                  <div class="website">
+                    <span class="fa fa-external-link"></span>
+                    <a target="_blank" target="_blank" href="http://joehaaga.xyz">http://joehaaga.xyz</a>
+                  </div>
+                  <div class="email">
+                    <span class="fa fa-envelope-o"></span>
+                    <a href="mailto:haaga.joe@gmail.com">haaga.joe@gmail.com</a>
+                  </div>
+                  <div class="phone">
+                    <span class="fa fa-mobile"></span>
+                    (240) 778-9695
+                  </div>
+              </div>
+
+                <div id="profiles">
+                    <div class="item">
+                        <div class="username">
+                          <span class="fa fa-github github social"></span>
+                            <span class="url">
+                              <a target="_blank" href="https://github.com/josephhaaga">josephhaaga</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="username">
+                          <span class="fa fa-linkedin linkedin social"></span>
+                            <span class="url">
+                              <a target="_blank" href="https://www.linkedin.com/in/joseph-haaga/">joseph-haaga</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="section margin1">
+              <header>
+                <h2 class='section-title'>Skills</h2>
+              </header>
+              <section id="skills">
+                  <div class="item">
+                      <h3 class="name">
+                        Web Development
+                      </h3>
+                      <ul class="keywords">
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>Javascript</li>
+                          <li>PHP</li>
+                          <li>LAMP Stack</li>
+                          <li>MEAN Stack</li>
+                          <li>ReactJS</li>
+                          <li>NodeJS</li>
+                          <li>Pimcore</li>
+                          <li>Drupal 7/8</li>
+                          <li>Wordpress</li>
+                          <li>jQuery</li>
+                          <li>d3js</li>
+                          <li>Cordova/Phonegap</li>
+                          <li>508 Compliance</li>
+                      </ul>
+                  </div>
+                  <div class="item">
+                      <h3 class="name">
+                        Software Development
+                      </h3>
+                      <ul class="keywords">
+                          <li>Java</li>
+                          <li>Python</li>
+                          <li>BASH</li>
+                          <li>Perl</li>
+                          <li>Git</li>
+                          <li>Docker</li>
+                          <li>Unit Testing</li>
+                          <li>TDD</li>
+                          <li>OOP</li>
+                          <li>Functional Programming</li>
+                          <li>Design Patterns</li>
+                          <li>Algorithmic Analysis</li>
+                          <li>RDBMS</li>
+                          <li>MySQL/NoSQL</li>
+                      </ul>
+                  </div>
+                  <div class="item">
+                      <h3 class="name">
+                        Data Science
+                      </h3>
+                      <ul class="keywords">
+                          <li>R</li>
+                          <li>Python</li>
+                          <li>Pandas</li>
+                          <li>NumPy</li>
+                          <li>NLP</li>
+                          <li>Classification</li>
+                          <li>Regression/Linear Modeling</li>
+                          <li>Clustering/Unsupervised techniques</li>
+                          <li>SQL/NoSQL</li>
+                          <li>Elasticsearch &amp; Logstash</li>
+                          <li>Tableau</li>
+                          <li>ArcGIS</li>
+                      </ul>
+                  </div>
+              </section>
+            </section>
+
+            <section class="section">
+              <header>
+                <h2 class='section-title'>Work Experience <span class="item-count">(7)</span></h2>
+              </header>
+              <section id="work">
+                    <header>
+                      <span class="space-left">
+                          <span class="fa fa-caret-down"></span>
+                      </span>
+                        <div class="position">
+                          Data Scientist
+                        </div>
+                      <div class="company">
+                        Tylor Data Services
+                      </div>
+                      <div class="date">
+                          <span class="startDate">
+                            October 2018
+                          </span>
+                          <span class="endDate">
+                            - Current
+                          </span>
+                      </div>
+                    </header>
+                    <span class="website">
+                      <a target="_blank" href="http://tylordata.com/">http://tylordata.com/</a>
+                    </span>
+
+                    <div class="item display" style="opacity:1">
+                        <div class="summary">
+                          <p><p>TDS continues to deliver data science consulting, big data analytics, and custom computer programming services that are proven to address business challenges for government agencies, non-profit organizations and private corporations.</p></p>
+                        </div>
+                        <ul class="highlights">
+                            <li><p>Leading development of a graph analytics tool for fraud pattern detection in financial data graphs.</p></li>
+                            <li><p>Supporting research in applying novel deep learning techniques to elicit graph embeddings.</p></li>
+                        </ul>
+                    </div>
+
+                    <header>
+                      <span class="space-left">
+                          <span class="fa fa-caret-right"></span>
+                      </span>
+                        <div class="position">
+                          Data Scientist
+                        </div>
+                      <div class="company">
+                        Redhorse Corporation
+                      </div>
+                      <div class="date">
+                          <span class="startDate">
+                            June 2018
+                          </span>
+                          <span class="endDate">
+                            - October 2018
+                          </span>
+                      </div>
+                    </header>
+                    <span class="website">
+                      <a target="_blank" href="https://redhorsecorp.com">https://redhorsecorp.com</a>
+                    </span>
+
+                      <div class="item display none" style="opacity:0">
+                        <div class="summary">
+                          <p><p>Redhorse Corporation, a program management and technology services company, provides integrated solutions in environmental consulting, energy and climate change, information technology, and intelligence.</p></p>
+                        </div>
+                        <ul class="highlights">
+                            <li><p>Designed and implemented a image recognition application for environmental science use case.</p></li>
+                            <li><p>Experimented with different convolutional neural network architectures to maximize F1 score.</p></li>
+                            <li><p>Built custom sklearn Pipeline components to take advantage of OpenCV preprocessing techniques.</p></li>
+                            <li><p>Developed web-based utility resulting in a 10x decrease in time spent labelling training data.</p></li>
+                        </ul>
+                    </div>
+
+                    <header>
+                      <span class="space-left">
+                          <span class="fa fa-caret-right"></span>
+                      </span>
+                        <div class="position">
+                          Full Stack Developer
+                        </div>
+                      <div class="company">
+                        Grafik
+                      </div>
+                      <div class="date">
+                          <span class="startDate">
+                            August 2016
+                          </span>
+                          <span class="endDate">
+                            - June 2018
+                          </span>
+                      </div>
+                    </header>
+                    <span class="website">
+                      <a target="_blank" href="https://grafik.agency">https://grafik.agency</a>
+                    </span>
+
+                      <div class="item display none" style="opacity:0">
+                        <div class="summary">
+                          <p><p>Grafik is a branding agency focused on crafting digital brands for B2B, B2C, Nonprofit and government clients worldwide.</p></p>
+                        </div>
+                        <ul class="highlights">
+                            <li><p>Led architecture and development of CMS-driven solutions for clients like Strayer & Global Automakers, using Drupal 8 and Pimcore 5.</p></li>
+                            <li><p>Contributed to the architecture and development of marketing websites for brands like Strayer, Ligado, Politico, Merritt Clubs, JBG and EYA. Developed on Drupal 7, Pimcore 4/5, and Wordpress.</p></li>
+                            <li><p>Drastically reduced development timelines by building internal tools to streamline internal processes (structured QA spreadsheet with Slackbot integration to close developer-designer feedback loop and closely track live performance/completeness metrics). Built using Google Apps Script, Google Sheets, and Slack Webhooks.</p></li>
+                            <li><p>Delivered customer persona insights by applying data mining & visualization techniques to client CRM & transactional data. Performed analysis using Tableau and Anaconda toolkit (Seaborn, Pandas, NumPy).</p></li>
+                        </ul>
+                    </div>
+
+                    <header>
+                      <span class="space-left">
+                          <span class="fa fa-caret-right"></span>
+                      </span>
+                        <div class="position">
+                          Lead Architect
+                        </div>
+                      <div class="company">
+                        GWU Data Science Institute
+                      </div>
+                      <div class="date">
+                          <span class="startDate">
+                            November 2017
+                          </span>
+                          <span class="endDate">
+                            - May 2018
+                          </span>
+                      </div>
+                    </header>
+                    <span class="website">
+                      <a target="_blank" href="https://gwu.edu">https://gwu.edu</a>
+                    </span>
+
+                      <div class="item display none" style="opacity:0">
+                        <div class="summary">
+                          <p><p>Selected to be a founding member of GWU's DSI, aiding in bootstrapping the institute as well as supporting technical initiatives.</p></p>
+                        </div>
+                        <ul class="highlights">
+                            <li><p>Led deployment efforts in standing up a cloud-hosted information sharing environment for Virginia state agencies, alongside ODNI and AWS</p></li>
+                            <li><p>Mentored students in Data Warehousing classes, providing guidance on their semester projects</p></li>
+                        </ul>
+                    </div>
+
+                    <header>
+                      <span class="space-left">
+                          <span class="fa fa-caret-right"></span>
+                      </span>
+                        <div class="position">
+                          Developer
+                        </div>
+                      <div class="company">
+                        Gray Street Solutions
+                      </div>
+                      <div class="date">
+                          <span class="startDate">
+                            May 2015
+                          </span>
+                          <span class="endDate">
+                            - July 2016
+                          </span>
+                      </div>
+                    </header>
+                    <span class="website">
+                      <a target="_blank" href="https://graystreetsolutions.com">https://graystreetsolutions.com</a>
+                    </span>
+
+                      <div class="item display none" style="opacity:0">
+                        <div class="summary">
+                          <p><p>Gray Street Solutions is a boutique, digital-first creative agency, founded on the principle of bringing a “Fearlessly Agile” approach to online communications consulting, open-source web development, and social media campaign management.</p></p>
+                        </div>
+                        <ul class="highlights">
+                            <li><p>Led development of a cross-platform mobile application to track a brand’s social media campaigns, using Apache Cordova and Adobe PhoneGap.</p></li>
+                            <li><p>Developed and maintained digital presences for a variety of trade organizations, defense companies, and nonprofit clients. Developed on Wordpress and maintained on WPEngine managed hosting.</p></li>
+                        </ul>
+                    </div>
+
+                    <header>
+                      <span class="space-left">
+                          <span class="fa fa-caret-right"></span>
+                      </span>
+                        <div class="position">
+                          Jr. Solutioneer
+                        </div>
+                      <div class="company">
+                        Eastport Analytics
+                      </div>
+                      <div class="date">
+                          <span class="startDate">
+                            May 2014
+                          </span>
+                          <span class="endDate">
+                            - August 2014
+                          </span>
+                      </div>
+                    </header>
+                    <span class="website">
+                      <a target="_blank" href="https://www.eastportanalytics.com/">https://www.eastportanalytics.com/</a>
+                    </span>
+
+                      <div class="item display none" style="opacity:0">
+                        <div class="summary">
+                          <p><p>Eastport Analytics is an analytics consulting group applying advanced analytics to uncover valuable insights and drive measurably better mission outcomes.</p></p>
+                        </div>
+                        <ul class="highlights">
+                            <li><p>Developed automated spreadsheet parsers in Java 7.</p></li>
+                            <li><p>Merged GIS shapefiles with political ad spend data to determine campaign efficacy in Designated Market Areas.</p></li>
+                        </ul>
+                    </div>
+
+                    <header>
+                      <span class="space-left">
+                          <span class="fa fa-caret-right"></span>
+                      </span>
+                        <div class="position">
+                          Developer
+                        </div>
+                      <div class="company">
+                        @HomeRehab
+                      </div>
+                      <div class="date">
+                          <span class="startDate">
+                            May 2013
+                          </span>
+                          <span class="endDate">
+                            - April 2014
+                          </span>
+                      </div>
+                    </header>
+                    <span class="website">
+                      <a target="_blank" href="https://gust.com/companies/homerehab">https://gust.com/companies/homerehab</a>
+                    </span>
+
+                      <div class="item display none" style="opacity:0">
+                        <div class="summary">
+                          <p><p>@HomeRehab designs exercise devices and software to improve the continuum of care related to falls among the aging population.</p></p>
+                        </div>
+                        <ul class="highlights">
+                            <li><p>Prototyped IoT orthopedic rehabilitative device on Arduino hardware in a dialect of C.</p></li>
+                            <li><p>Developed games to be played with the device to aid in gamification of proprioceptive rehabilitation exercises.</p></li>
+                            <li><p>Implement wireless modules (XBee), LCD screens, & various sensors/actuators within I/O constraints of a development board.</p></li>
+                        </ul>
+                    </div>
+
+                </section>
+              </section>
+
+
+                <section class="section">
+                  <header>
+                    <h2 class='section-title'>Volunteer</h2>
+                  </header>
+                  <section id="volunteer">
+                        <header class="clear">
+                          <span class="space-left">
+                              <span class="fa fa-caret-down"></span>
+                          </span>
+                          <div class="header-left">
+                              <div class="position">
+                                Coordinator &amp; Volunteer
+                              </div>
+                            <div class="organization">
+                              Grafik Gives
+                            </div>
+                          </div>
+                          <div class="date">
+                              <span class="startDate">
+                                August 2017
+                              </span>
+                              <span class="endDate">
+                                - Current
+                              </span>
+                          </div>
+                        </header>
+                        <div class="website">
+                          <a target="_blank" href="https://grafik.agency">https://grafik.agency</a>
+                        </div>
+
+
+
+                        <div class="item display" style="opacity:1">
+                            <div class="summary">
+                              <p><p>Introduce potential initiatives and coordinate CSR events.</p></p>
+                            </div>
+                            <ul class="highlights">
+                                <li><p>Raised >$1000 for AIGA, providing scholarships for underrepresented design students in the DC area.</p></li>
+                                <li><p>Developed spreadsheet solution for long-term initiative planning, enabling tracking of the organization's impact on local, regional, and national levels.</p></li>
+                            </ul>
+                        </div>
+                        <header class="clear">
+                          <span class="space-left">
+                              <span class="fa fa-caret-right"></span>
+                          </span>
+                          <div class="header-left">
+                              <div class="position">
+                                Kitchen Volunteer
+                              </div>
+                            <div class="organization">
+                              So Others Might Eat
+                            </div>
+                          </div>
+                          <div class="date">
+                              <span class="startDate">
+                                April 2011
+                              </span>
+                              <span class="endDate">
+                                - Current
+                              </span>
+                          </div>
+                        </header>
+                        <div class="website">
+                          <a target="_blank" href="http://some.org/">http://some.org/</a>
+                        </div>
+
+
+
+                          <div class="item display none" style="opacity:0">
+                            <div class="summary">
+                              <p><p>Serving meals to marginalized people in the DMV area.</p></p>
+                            </div>
+                        </div>
+                    </section>
+                  </section>
+
+                  <section class="section">
+                    <header>
+                      <h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+                    </header>
+                    <section id="education">
+                        <header class="clear">
+                          <span class="space-left">
+                              <span class="fa fa-caret-down"></span>
+                          </span>
+                          <div class="header-left">
+                              <div class="studyType">
+                                M.Sc.
+                              </div>
+                              <div class="area">
+                                Data Science
+                              </div>
+                              <div class="institution">
+                                The George Washington University
+                              </div>
+                          </div>
+                          <div class="date">
+                              <span class="startDate">
+                                2017
+                              </span>
+                              <span class="endDate">
+                                - 2018
+                              </span>
+                          </div>
+                        </header>
+
+
+                          <ul class="courses">
+                              <li>Data Science</li>
+                              <li>Data Warehousing</li>
+                              <li>Data Mining</li>
+                              <li>Visualization of Complex Data</li>
+                              <li>Machine Learning I</li>
+                              <li>Machine Learning II</li>
+                              <li>Time Series Analysis</li>
+                              <li>Cloud Computing</li>
+                              <li>Bayesian Methods</li>
+                              <li>Member of Graduate Consulting Club</li>
+                              <li>Member of MBA Business Analytics Club</li>
+                              <li>President of MS Data Science Student Council</li>
+                          </ul>
+
+                          <div class="item display" style="opacity:1">
+                              <div class='gpa'>
+                                <strong> Grade:</strong> <span>3.92</span>
+                              </div>
+                          </div>
+                        <header class="clear">
+                          <span class="space-left">
+                              <span class="fa fa-caret-right"></span>
+                          </span>
+                          <div class="header-left">
+                              <div class="studyType">
+                                B.Sc.
+                              </div>
+                              <div class="area">
+                                Computer Science
+                              </div>
+                              <div class="institution">
+                                The George Washington University
+                              </div>
+                          </div>
+                          <div class="date">
+                              <span class="startDate">
+                                2012
+                              </span>
+                              <span class="endDate">
+                                - 2017
+                              </span>
+                          </div>
+                        </header>
+
+
+                          <ul class="courses">
+                              <li>Circuit Theory</li>
+                              <li>Bioinformatics</li>
+                              <li>Algorithms</li>
+                              <li>Software Engineering</li>
+                              <li>Database Systems</li>
+                              <li>Systems Architecture</li>
+                              <li>Operating Systems</li>
+                              <li>Machine Learning</li>
+                              <li>Systems Programming</li>
+                              <li>Artificial Intelligence Algorithms</li>
+                              <li>Statistical NLP</li>
+                              <li>DEEPQuest IBM Watson (essentially a supplement to Stat. NLP)</li>
+                          </ul>
+
+                            <div class="item display none" style="opacity:0">
+                          </div>
+                      </section>
+                    </section>
+
+
+
+
+
+                    </div>
+                    <script>
+                      (function(){
+                        var elements = document.querySelector("#resume");
+
+                        // adding the element to the all container
+                        // and using event delegation
+                        elements.addEventListener("click", function(e) {
+                          var current = e.target;
+                          // font awesone arrows
+                          var arrowRight = current.classList.contains('fa-caret-right');
+                          var arrowDown = current.classList.contains('fa-caret-down');
+
+                          if(current && current.nodeName == "SPAN" && (arrowRight || arrowDown)) {
+                            var header = e.target.parentNode.parentNode;
+                            var item = header.nextSibling;
+
+                            // select the .item element from the siblings
+                            while (!item || !item.classList || !item.classList.contains('item')) {
+                              item = item.nextSibling;
+                            }
+
+                            // hide or show the .item element
+                            item.classList.toggle('none');
+
+                            // if the .item is going to be shown then imcrease is opacity
+                            // every 20 milliseconds to make a fadeIn effect
+                            if (!item.classList.contains('none')) {
+                              var id = setInterval(function() {
+                                item.style.opacity = parseFloat(item.style.opacity) + 0.09;
+                                if (parseFloat(item.style.opacity) >= 1) {
+                                  clearInterval(id);
+                                }
+                              }, 20);
+                            } else {
+                              item.style.opacity = 0;
+                            }
+
+                            current.classList.toggle('fa-caret-right');
+                            current.classList.toggle('fa-caret-down');
+                          }
+
+                        }, false);
+
+                        // Make the #resume visible only when the DOM is fully loaded
+                        elements.style.opacity = '1';
+                      })();
+                    </script>
+                  </body>
+
+                </html>
