@@ -13,7 +13,7 @@ const posts = (await getCollection('blog'))
 
     <div style="display: flex; flex-direction: column; gap: 1.5rem;">
       {posts.map(post => (
-        <a href={`/blog/${post.slug}`} style="display: block; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; text-decoration: none; transition: border-color 0.2s;">
+        <a href={`/blog/${post.id.replace(/\.mdx?$/, '')}`} style="display: block; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; text-decoration: none; transition: border-color 0.2s;">
           <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
             <div style="flex: 1;">
               <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem;">
