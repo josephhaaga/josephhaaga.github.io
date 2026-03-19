@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Resume" description="Joseph Haaga's work history and technical skills.">
+  <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 900px;">
+
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem;">
+      <div>
+        <h1 style="font-size: 2.5rem; margin-bottom: 0.25rem;">Joseph Haaga</h1>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">Principal Software Engineer & MLOps Consultant · Washington, D.C.</p>
+      </div>
+      <a href="/consulting" class="btn btn-primary">Hire Me</a>
+    </div>
+
+    <!-- Experience -->
+    <section style="margin-bottom: 3rem;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">Experience</h2>
+
+      {[
+        {
+          title: 'Principal Software Engineer',
+          company: 'BuzzFeed',
+          period: 'Nov 2022 – Present',
+          bullets: [
+            'Architect and maintain ML platform powering content recommendations for millions of users',
+            'Lead Kubeflow-based ML training pipeline serving multiple data science teams',
+            'Drive platform engineering initiatives including internal developer tooling and GitOps workflows',
+            'Collaborate with data scientists to productionize models and reduce time-to-production'
+          ]
+        },
+        {
+          title: 'Lead MLOps Engineer',
+          company: 'Interos',
+          period: 'Prior',
+          bullets: [
+            'Built MLOps platform from greenfield to production on AWS EKS',
+            'Implemented model registry, experiment tracking (MLflow), and automated model serving',
+            'Designed data pipelines ingesting and processing supply chain risk signals at scale',
+            'Mentored a team of 4 ML engineers on infrastructure and deployment best practices'
+          ]
+        },
+        {
+          title: 'Senior Data Engineer',
+          company: 'Capital One',
+          period: 'Prior',
+          bullets: [
+            'Built batch and streaming data pipelines for financial risk analytics',
+            'Managed Spark clusters and Hadoop infrastructure serving thousands of jobs daily',
+            'Worked in high-compliance environment with strict data governance and audit requirements',
+            'Contributed to internal data platform tooling and developer experience improvements'
+          ]
+        },
+        {
+          title: 'Data Scientist',
+          company: 'Redhorse Corporation',
+          period: 'Prior',
+          bullets: [
+            'Applied NLP and ML techniques to government data for defense and intelligence clients',
+            'Built end-to-end data pipelines from ingestion to model deployment',
+            'Designed dashboards and visualizations for mission-critical decision support'
+          ]
+        },
+        {
+          title: 'Lead Architect',
+          company: 'GW Data Science Institute',
+          period: 'Prior',
+          bullets: [
+            'Led architecture for research data infrastructure at George Washington University',
+            'Designed data warehousing, ETL, and analytics platform for research teams',
+            'Trained and mentored students and researchers in data engineering practices'
+          ]
+        },
+        {
+          title: 'Full Stack Developer',
+          company: 'Grafik',
+          period: 'Prior',
+          bullets: [
+            'Built web applications and digital experiences for government and commercial clients',
+            'Developed front-end with React and back-end APIs with Node.js',
+            'Collaborated with designers and project managers in an agile environment'
+          ]
+        }
+      ].map(job => (
+        <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+            <div>
+              <h3 style="font-size: 1.1rem; color: var(--text-heading);">{job.title}</h3>
+              <p style="color: var(--accent); font-size: 0.9rem;">{job.company}</p>
+            </div>
+            <span style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.8rem;">{job.period}</span>
+          </div>
+          <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.4rem;">
+            {job.bullets.map(b => (
+              <li style="color: var(--text-muted); font-size: 0.9rem; display: flex; gap: 0.5rem;">
+                <span style="color: var(--accent); flex-shrink: 0;">·</span>
+                {b}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);">Skills</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem;">
+        {[
+          { cat: 'Languages', items: ['Python', 'JavaScript/Node.js', 'Java', 'Scala', 'SQL', 'Bash'] },
+          { cat: 'ML/AI', items: ['TensorFlow', 'PyTorch', 'scikit-learn', 'Kubeflow', 'MLflow', 'Hugging Face'] },
+          { cat: 'Cloud', items: ['AWS (EKS, S3, EMR, SageMaker)', 'GCP (GKE, BigQuery)'] },
+          { cat: 'Infrastructure', items: ['Kubernetes', 'Docker', 'Terraform', 'Helm', 'GitOps', 'ArgoCD'] },
+          { cat: 'Data', items: ['Apache Spark', 'Airflow', 'dbt', 'Elasticsearch', 'MongoDB', 'PostgreSQL'] },
+          { cat: 'Frontend', items: ['React', 'TypeScript', 'REST APIs', 'GraphQL'] }
+        ].map(group => (
+          <div>
+            <h3 style="font-size: 0.85rem; color: var(--accent); font-family: var(--font-mono); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">{group.cat}</h3>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.25rem;">
+              {group.items.map(item => <li style="color: var(--text-muted); font-size: 0.88rem;">{item}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>
