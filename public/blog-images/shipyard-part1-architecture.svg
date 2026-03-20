@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" style="background:#0f172a; font-family:Inter, system-ui, sans-serif;">
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" fill="#f1f5f9" font-size="18" font-weight="600">The Shipyard — Platform Architecture</text>
+  <text x="450" y="62" text-anchor="middle" fill="#94a3b8" font-size="13">Map · Model · Monitor</text>
+
+  <!-- Raw Data -->
+  <rect x="40" y="100" width="140" height="70" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="110" y="128" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="600">Raw Data</text>
+  <text x="110" y="146" text-anchor="middle" fill="#94a3b8" font-size="11">News feeds</text>
+  <text x="110" y="161" text-anchor="middle" fill="#94a3b8" font-size="11">Corporate filings</text>
+
+  <!-- Arrow 1 -->
+  <line x1="180" y1="135" x2="230" y2="135" stroke="#334155" stroke-width="2"/>
+  <polygon points="230,130 240,135 230,140" fill="#334155"/>
+
+  <!-- MAP -->
+  <rect x="240" y="90" width="140" height="90" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+  <text x="310" y="118" text-anchor="middle" fill="#06b6d4" font-size="14" font-weight="700">MAP</text>
+  <text x="310" y="138" text-anchor="middle" fill="#94a3b8" font-size="11">Entity resolution</text>
+  <text x="310" y="154" text-anchor="middle" fill="#94a3b8" font-size="11">Graph construction</text>
+  <text x="310" y="170" text-anchor="middle" fill="#94a3b8" font-size="11">Relationship inference</text>
+
+  <!-- Arrow 2 -->
+  <line x1="380" y1="135" x2="430" y2="135" stroke="#334155" stroke-width="2"/>
+  <polygon points="430,130 440,135 430,140" fill="#334155"/>
+
+  <!-- MODEL -->
+  <rect x="440" y="90" width="140" height="90" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+  <text x="510" y="118" text-anchor="middle" fill="#06b6d4" font-size="14" font-weight="700">MODEL</text>
+  <text x="510" y="138" text-anchor="middle" fill="#94a3b8" font-size="11">Risk classification</text>
+  <text x="510" y="154" text-anchor="middle" fill="#94a3b8" font-size="11">Score computation</text>
+  <text x="510" y="170" text-anchor="middle" fill="#94a3b8" font-size="11">Anomaly detection</text>
+
+  <!-- Arrow 3 -->
+  <line x1="580" y1="135" x2="630" y2="135" stroke="#334155" stroke-width="2"/>
+  <polygon points="630,130 640,135 630,140" fill="#334155"/>
+
+  <!-- MONITOR -->
+  <rect x="640" y="90" width="140" height="90" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+  <text x="710" y="118" text-anchor="middle" fill="#06b6d4" font-size="14" font-weight="700">MONITOR</text>
+  <text x="710" y="138" text-anchor="middle" fill="#94a3b8" font-size="11">Continuous alerts</text>
+  <text x="710" y="154" text-anchor="middle" fill="#94a3b8" font-size="11">Risk dashboards</text>
+  <text x="710" y="170" text-anchor="middle" fill="#94a3b8" font-size="11">Event streaming</text>
+
+  <!-- The Shipyard Platform box -->
+  <rect x="200" y="240" width="520" height="120" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="460" y="268" text-anchor="middle" fill="#94a3b8" font-size="12">The Shipyard — ML Platform</text>
+
+  <!-- Platform components -->
+  <rect x="220" y="280" width="110" height="50" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="275" y="301" text-anchor="middle" fill="#e2e8f0" font-size="11">Kubeflow</text>
+  <text x="275" y="318" text-anchor="middle" fill="#94a3b8" font-size="10">Pipelines</text>
+
+  <rect x="345" y="280" width="110" height="50" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="400" y="301" text-anchor="middle" fill="#e2e8f0" font-size="11">EKS</text>
+  <text x="400" y="318" text-anchor="middle" fill="#94a3b8" font-size="10">Kubernetes</text>
+
+  <rect x="470" y="280" width="110" height="50" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="525" y="301" text-anchor="middle" fill="#e2e8f0" font-size="11">Model Registry</text>
+  <text x="525" y="318" text-anchor="middle" fill="#94a3b8" font-size="10">(Git)</text>
+
+  <rect x="595" y="280" width="110" height="50" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="650" y="301" text-anchor="middle" fill="#e2e8f0" font-size="11">Snitch</text>
+  <text x="650" y="318" text-anchor="middle" fill="#94a3b8" font-size="10">Adherence</text>
+
+  <!-- Connector lines from MAP/MODEL/MONITOR to platform -->
+  <line x1="310" y1="180" x2="310" y2="240" stroke="#334155" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="510" y1="180" x2="510" y2="240" stroke="#334155" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="710" y1="180" x2="710" y2="240" stroke="#334155" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Footer note -->
+  <text x="450" y="395" text-anchor="middle" fill="#475569" font-size="11">Originally published: Interos Engineering — medium.com/interos-engineering</text>
+</svg>

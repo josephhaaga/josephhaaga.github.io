@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" style="background:#0f172a; font-family:Inter, system-ui, sans-serif;">
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" fill="#f1f5f9" font-size="18" font-weight="600">Model Promotion Pipeline</text>
+  <text x="450" y="62" text-anchor="middle" fill="#94a3b8" font-size="13">Dev → Staging → Production with automated gates</text>
+
+  <!-- Environments row -->
+  <!-- Development -->
+  <rect x="30" y="100" width="200" height="220" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="130" y="128" text-anchor="middle" fill="#06b6d4" font-size="14" font-weight="700">Development</text>
+
+  <rect x="50" y="145" width="160" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="130" y="164" text-anchor="middle" fill="#e2e8f0" font-size="11">Experimentation</text>
+  <text x="130" y="180" text-anchor="middle" fill="#94a3b8" font-size="10">Jupyter · Local training</text>
+
+  <rect x="50" y="200" width="160" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="130" y="219" text-anchor="middle" fill="#e2e8f0" font-size="11">Model artifact</text>
+  <text x="130" y="235" text-anchor="middle" fill="#94a3b8" font-size="10">Metrics + config</text>
+
+  <rect x="50" y="255" width="160" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="130" y="274" text-anchor="middle" fill="#e2e8f0" font-size="11">Git commit</text>
+  <text x="130" y="290" text-anchor="middle" fill="#94a3b8" font-size="10">Version + changelog</text>
+
+  <!-- Arrow to Staging -->
+  <rect x="240" y="190" width="80" height="40" rx="6" fill="#0f172a" stroke="#334155" stroke-dasharray="3,2"/>
+  <text x="280" y="207" text-anchor="middle" fill="#94a3b8" font-size="10">Auto gate</text>
+  <text x="280" y="222" text-anchor="middle" fill="#94a3b8" font-size="10">PR review</text>
+  <line x1="230" y1="210" x2="240" y2="210" stroke="#334155" stroke-width="2"/>
+  <line x1="320" y1="210" x2="330" y2="210" stroke="#334155" stroke-width="2"/>
+  <polygon points="326,205 336,210 326,215" fill="#334155"/>
+
+  <!-- Staging -->
+  <rect x="336" y="100" width="200" height="220" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="436" y="128" text-anchor="middle" fill="#06b6d4" font-size="14" font-weight="700">Staging</text>
+
+  <rect x="356" y="145" width="160" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="436" y="164" text-anchor="middle" fill="#e2e8f0" font-size="11">Integration tests</text>
+  <text x="436" y="180" text-anchor="middle" fill="#94a3b8" font-size="10">Shadow mode traffic</text>
+
+  <rect x="356" y="200" width="160" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="436" y="219" text-anchor="middle" fill="#e2e8f0" font-size="11">Snitch validation</text>
+  <text x="436" y="235" text-anchor="middle" fill="#94a3b8" font-size="10">Compliance checks</text>
+
+  <rect x="356" y="255" width="160" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="436" y="274" text-anchor="middle" fill="#e2e8f0" font-size="11">Human review</text>
+  <text x="436" y="290" text-anchor="middle" fill="#94a3b8" font-size="10">Approval gate</text>
+
+  <!-- Arrow to Production -->
+  <rect x="546" y="190" width="80" height="40" rx="6" fill="#0f172a" stroke="#334155" stroke-dasharray="3,2"/>
+  <text x="586" y="207" text-anchor="middle" fill="#94a3b8" font-size="10">Manual gate</text>
+  <text x="586" y="222" text-anchor="middle" fill="#94a3b8" font-size="10">Approval req.</text>
+  <line x1="536" y1="210" x2="546" y2="210" stroke="#334155" stroke-width="2"/>
+  <line x1="626" y1="210" x2="636" y2="210" stroke="#334155" stroke-width="2"/>
+  <polygon points="632,205 642,210 632,215" fill="#334155"/>
+
+  <!-- Production -->
+  <rect x="642" y="100" width="228" height="220" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+  <text x="756" y="128" text-anchor="middle" fill="#06b6d4" font-size="14" font-weight="700">Production</text>
+
+  <rect x="662" y="145" width="188" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="756" y="164" text-anchor="middle" fill="#e2e8f0" font-size="11">Canary deployment</text>
+  <text x="756" y="180" text-anchor="middle" fill="#94a3b8" font-size="10">5% → 25% → 100%</text>
+
+  <rect x="662" y="200" width="188" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="756" y="219" text-anchor="middle" fill="#e2e8f0" font-size="11">Live serving</text>
+  <text x="756" y="235" text-anchor="middle" fill="#94a3b8" font-size="10">&gt;1M predictions/day</text>
+
+  <rect x="662" y="255" width="188" height="45" rx="6" fill="#0f172a" stroke="#334155"/>
+  <text x="756" y="274" text-anchor="middle" fill="#e2e8f0" font-size="11">Monitoring</text>
+  <text x="756" y="290" text-anchor="middle" fill="#94a3b8" font-size="10">Drift · Latency · Errors</text>
+
+  <!-- Git Model Registry footer -->
+  <rect x="30" y="355" width="840" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="450" y="381" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600">Git Model Registry</text>
+  <text x="450" y="401" text-anchor="middle" fill="#94a3b8" font-size="11">Each environment has a branch · Promotion = PR merge · Full audit trail via git history</text>
+
+  <!-- Footer note -->
+  <text x="450" y="472" text-anchor="middle" fill="#475569" font-size="11">Originally published: Interos Engineering — medium.com/interos-engineering</text>
+</svg>

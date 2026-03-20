@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" style="background:#0f172a; font-family:Inter, system-ui, sans-serif;">
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" fill="#f1f5f9" font-size="18" font-weight="600">ML CI/CD Pipeline</text>
+  <text x="450" y="62" text-anchor="middle" fill="#94a3b8" font-size="13">From code commit to production serving</text>
+
+  <!-- Step 1: Code Commit -->
+  <rect x="30" y="100" width="130" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="95" y="128" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="600">1. Code Commit</text>
+  <text x="95" y="148" text-anchor="middle" fill="#94a3b8" font-size="10">Git push</text>
+  <text x="95" y="163" text-anchor="middle" fill="#94a3b8" font-size="10">Pull request</text>
+  <text x="95" y="180" text-anchor="middle" fill="#06b6d4" font-size="10">✓ Snitch (local)</text>
+
+  <!-- Arrow -->
+  <line x1="160" y1="145" x2="196" y2="145" stroke="#334155" stroke-width="2"/>
+  <polygon points="196,140 206,145 196,150" fill="#334155"/>
+
+  <!-- Step 2: Automated Tests -->
+  <rect x="206" y="100" width="130" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="271" y="125" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="600">2. Auto Tests</text>
+  <text x="271" y="145" text-anchor="middle" fill="#94a3b8" font-size="10">Unit tests</text>
+  <text x="271" y="160" text-anchor="middle" fill="#94a3b8" font-size="10">Data validation</text>
+  <text x="271" y="175" text-anchor="middle" fill="#94a3b8" font-size="10">Model eval</text>
+  <text x="271" y="182" text-anchor="middle" fill="#06b6d4" font-size="10">✓ Snitch (CI)</text>
+
+  <!-- Arrow -->
+  <line x1="336" y1="145" x2="372" y2="145" stroke="#334155" stroke-width="2"/>
+  <polygon points="372,140 382,145 372,150" fill="#334155"/>
+
+  <!-- Step 3: Build Container -->
+  <rect x="382" y="100" width="130" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="447" y="128" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="600">3. Build Image</text>
+  <text x="447" y="148" text-anchor="middle" fill="#94a3b8" font-size="10">Docker build</text>
+  <text x="447" y="163" text-anchor="middle" fill="#94a3b8" font-size="10">ECR push</text>
+  <text x="447" y="178" text-anchor="middle" fill="#94a3b8" font-size="10">Version tag</text>
+
+  <!-- Arrow -->
+  <line x1="512" y1="145" x2="548" y2="145" stroke="#334155" stroke-width="2"/>
+  <polygon points="548,140 558,145 548,150" fill="#334155"/>
+
+  <!-- Step 4: Staging -->
+  <rect x="558" y="100" width="130" height="90" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="623" y="128" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="600">4. Staging</text>
+  <text x="623" y="148" text-anchor="middle" fill="#94a3b8" font-size="10">Integration test</text>
+  <text x="623" y="163" text-anchor="middle" fill="#94a3b8" font-size="10">Shadow traffic</text>
+  <text x="623" y="178" text-anchor="middle" fill="#94a3b8" font-size="10">Human review</text>
+
+  <!-- Arrow -->
+  <line x1="688" y1="145" x2="724" y2="145" stroke="#334155" stroke-width="2"/>
+  <polygon points="724,140 734,145 724,150" fill="#334155"/>
+
+  <!-- Step 5: Production -->
+  <rect x="734" y="100" width="130" height="90" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="2"/>
+  <text x="799" y="128" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="600">5. Production</text>
+  <text x="799" y="148" text-anchor="middle" fill="#94a3b8" font-size="10">Canary deploy</text>
+  <text x="799" y="163" text-anchor="middle" fill="#94a3b8" font-size="10">Full rollout</text>
+  <text x="799" y="178" text-anchor="middle" fill="#94a3b8" font-size="10">Monitoring</text>
+
+  <!-- Snitch box — positioned below stages 1 & 2 -->
+  <rect x="20" y="240" width="330" height="110" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="185" y="268" text-anchor="middle" fill="#06b6d4" font-size="12" font-weight="600">🔍 Snitch</text>
+  <text x="185" y="288" text-anchor="middle" fill="#94a3b8" font-size="11">Python linter / pre-commit hook</text>
+  <text x="185" y="308" text-anchor="middle" fill="#94a3b8" font-size="11">Runs locally before commit</text>
+  <text x="185" y="328" text-anchor="middle" fill="#94a3b8" font-size="11">Runs again in CI on every PR</text>
+
+  <!-- Connectors from stages 1 and 2 down to Snitch box -->
+  <line x1="95" y1="190" x2="95" y2="240" stroke="#06b6d4" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <line x1="271" y1="190" x2="271" y2="240" stroke="#06b6d4" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+  <!-- Git Model Registry -->
+  <rect x="200" y="400" width="500" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+  <text x="450" y="426" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="600">Git Model Registry</text>
+  <text x="450" y="446" text-anchor="middle" fill="#94a3b8" font-size="11">All model artifacts versioned in Git · Immutable audit trail · PR-based promotion</text>
+
+  <!-- Footer note -->
+  <text x="450" y="490" text-anchor="middle" fill="#475569" font-size="11">Originally published: Interos Engineering — medium.com/interos-engineering</text>
+</svg>
