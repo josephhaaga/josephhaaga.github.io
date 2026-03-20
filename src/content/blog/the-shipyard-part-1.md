@@ -70,4 +70,4 @@ In the next installment, we'll go deep on the CI/CD pipeline that powers model d
 
 ---
 
-*[Continue to Part 2 →](https://medium.com/interos-engineering/the-shipyard-part-2-2689ca9dc9bb)*
+*[Continue to Part 2 →](/blog/the-shipyard-part-2)*

@@ -65,7 +65,7 @@ This immutability is critical. Once an image is built, it never changes. If we d
 
 The new model image is deployed to a staging environment that mirrors production. We run it in shadow mode — the model receives real traffic but its outputs don't affect customers. This lets us catch latency issues, memory problems, and unexpected output distributions before they impact anyone.
 
-Staging runs for a minimum of 24 hours. Snitch (more below) monitors the shadow outputs continuously during this period.
+Staging runs for a minimum of 24 hours. We monitor the shadow outputs continuously during this period for latency anomalies and unexpected output distributions.
 
 ### Stage 5: Production
 
@@ -88,7 +88,12 @@ The downside is that model artifacts can be large. We use Git LFS for the weight
 
 The most important thing we built wasn't the pipeline itself — it was Snitch.
 
-Snitch is a tool that watches every stage of the pipeline and enforces our standards. It's named for what it does: it tells on models that don't follow the rules.
+Snitch is a Python linter / pre-commit hook that enforces our deployment standards before code ever reaches CI. It's named for what it does: it tells on models that don't follow the rules.
+
+Snitch runs in two places:
+
+1. **Locally**, as a pre-commit hook, so data scientists get immediate feedback when something is wrong before they even push
+2. **In CI**, on every pull request, as a hard gate that blocks the PR from merging if any check fails
 
 What does Snitch check?
 
@@ -110,4 +115,4 @@ More importantly, the platform team's role changed. We went from being a bottlen
 
 ---
 
-*[Continue to Part 3 →](https://medium.com/interos-engineering) — the model promotion pipeline in depth, and how we built confidence that promoted models are actually better.*
+*[Continue to Part 3 →](/blog/the-shipyard-part-3) — the model promotion pipeline in depth, and how we built confidence that promoted models are actually better.*
