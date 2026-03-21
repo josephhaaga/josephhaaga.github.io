@@ -3,6 +3,7 @@ title: 'Lessons Learned Building an MLOps Platform from Scratch'
 description: 'Key insights from architecting and scaling ML infrastructure for production workloads'
 pubDate: '2024-01-15'
 tags: ['mlops', 'kubernetes', 'kubeflow', 'infrastructure']
+draft: true
 ---
 
 Building an MLOps platform from scratch is one of the most rewarding — and humbling — engineering challenges I've faced. Over the past few years, I've gone through this process multiple times, and each time I've learned something new. Here are the hard-won lessons I wish someone had told me at the start.
