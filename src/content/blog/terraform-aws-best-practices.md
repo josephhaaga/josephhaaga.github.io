@@ -3,6 +3,7 @@ title: 'Infrastructure as Code: Terraform Best Practices for Data Teams'
 description: 'How to structure Terraform modules and manage AWS infrastructure for data engineering teams'
 pubDate: '2024-02-20'
 tags: ['terraform', 'aws', 'iac', 'data-engineering']
+draft: true
 ---
 
 Infrastructure as Code has transformed how data teams manage their AWS resources. Terraform, in particular, has become the tool of choice for data engineers who want repeatable, auditable infrastructure. Here's what I've learned from managing Terraform at several companies, and the practices that have made the biggest difference.

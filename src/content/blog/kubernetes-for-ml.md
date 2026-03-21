@@ -3,6 +3,7 @@ title: 'Kubernetes for Machine Learning: A Practical Guide'
 description: 'Practical tips for running ML workloads on Kubernetes, including GPU scheduling and resource management'
 pubDate: '2024-02-01'
 tags: ['kubernetes', 'ml', 'eks', 'gpu']
+draft: true
 ---
 
 Kubernetes has become the de facto platform for running ML workloads in production. Whether you're training models, serving predictions, or orchestrating pipelines, chances are Kubernetes is involved. This guide covers the practical aspects I've learned from running ML workloads at scale on AWS EKS and GCP GKE.

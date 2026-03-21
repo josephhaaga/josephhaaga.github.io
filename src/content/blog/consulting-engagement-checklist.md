@@ -3,6 +3,7 @@ title: 'What to Look for in a Software Consulting Engagement'
 description: 'A checklist for both consultants and clients to ensure successful project outcomes'
 pubDate: '2024-03-01'
 tags: ['consulting', 'project-management', 'best-practices']
+draft: true
 ---
 
 After years of both hiring consultants and being one, I've seen what separates engagements that deliver lasting value from ones that leave everyone frustrated. This checklist applies whether you're the consultant or the client.
