@@ -107,6 +107,22 @@ nav .nav-links a {
   transition: color 0.2s;
 }
 
+@media (max-width: 500px) {
+  nav .nav-inner {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  nav .nav-brand {
+    font-size: 0.95rem;
+  }
+
+  nav .nav-links {
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+}
+
 nav .nav-links a:hover,
 nav .nav-links a.active {
   color: var(--accent);

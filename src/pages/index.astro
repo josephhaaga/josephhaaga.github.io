@@ -18,7 +18,7 @@ const skills = [
   <!-- Hero Section -->
   <section style="padding: 5rem 0 4rem; border-bottom: 1px solid var(--border);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center;">
+      <div class="hero-grid">
         <div>
           <div style="font-family: var(--font-mono); color: var(--accent); margin-bottom: 1rem; font-size: 0.9rem;">$ whoami</div>
           <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 0.75rem; line-height: 1.1;">Joseph Haaga</h1>
@@ -36,7 +36,7 @@ const skills = [
             <a href="/resume" class="btn btn-outline">View Resume</a>
           </div>
         </div>
-        <div style="display: flex; justify-content: center;">
+        <div class="hero-image">
           <img src="/me.jpg" alt="Joseph Haaga" style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); box-shadow: 0 0 30px rgba(6, 182, 212, 0.2);" />
         </div>
       </div>
@@ -70,7 +70,7 @@ const skills = [
   <section style="padding: 4rem 0; border-bottom: 1px solid var(--border);">
     <div class="container">
       <h2 style="font-size: 1.75rem; margin-bottom: 2rem;">About</h2>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+      <div class="about-grid">
         <div class="prose">
           <p>I'm a Principal Software Engineer and MLOps specialist with 10+ years of experience building production ML systems and data infrastructure at scale.</p>
           <p>Currently at <strong style="color: var(--text-heading);">BuzzFeed</strong>, where I architect and maintain ML platforms that power content recommendations and analytics for millions of users.</p>
@@ -148,5 +148,37 @@ const skills = [
   @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  @media (max-width: 640px) {
+    .hero-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+      order: -1;
+    }
+
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
